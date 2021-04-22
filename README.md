@@ -1,2 +1,4 @@
 # next-auth-hasura-adapter
-Database Adapter for NextAuth that uses the Hasura GQL interface instead of directly accessing underlying PostgreSQL database.
+#### Database Adapter for [NextAuth](https://next-auth.js.org/) that uses the [Hasura](https://hasura.io/) GraphQL interface instead of directly accessing underlying PostgreSQL database.
+
+The goal of this project is to build a well documented and extensible (but probably opinionated) Adapter for [NextAuth](https://next-auth.js.org/) which uses the [Hasura](https://hasura.io/) GQL interface to perform the requested actions instead of accessing the PostgreSQL database underlying the Hasura instance directly (this will require setup of the necessary schemas beforehand, for references see [NextAuth Postgres schema documentation](https://next-auth.js.org/schemas/postgres)). It will take in a data handling function (fetching and error handling) to accomodate for any application design choices outside of the scope of this adapter.
